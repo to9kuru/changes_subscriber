@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscriber Counter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="input-container" id="inputContainer">
+        <input type="file" id="iconInput" accept="image/*">
+        <input type="text" id="channelName" placeholder="チャンネルの名前">
+        <input type="number" id="initialNumber" placeholder="変わる前の数字">
+        <input type="number" id="changedNumber" placeholder="変わる数字">
+        <button onclick="showSubscriberCount()">GO!</button>
+    </div>
+    <div class="display-container" id="displayContainer" style="display: none;">
+        <img id="channelIcon" src="" alt="Channel Icon">
+        <h1 id="channelTitle"></h1>
+        <h2 id="subscriberCount"> </h2>
+        <h3>Subscribers</h3>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
